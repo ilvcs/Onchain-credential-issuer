@@ -7,7 +7,7 @@
 This is a demo service that communicates with the [merklized on-chain issuer](https://github.com/0xPolygonID/contracts/blob/674043ddd96c1944db15079c6a00e543731724bc/contracts/examples/IdentityExample.sol) to issuer merklized credential. At first glance, it may appear to be a decentralized issuer, but it is not. In the case of a merklized credential, the service issues a credential locally, then calculates the Merkle root for the credential and saves the core claim of the credential on-chain. As a result, the user will have a MTP proof, and the issuer will manage all of their trees on-chain. After that, the user can use the MTP proof to build a ZK proof to prove the claim on-chain with an [on-chain verifier](https://devs.polygonid.com/docs/verifier/on-chain-verification/overview/).</br>
 If you want to have a decentralized on-chain issuer, consider using this [contract](https://github.com/0xPolygonID/contracts/blob/main/scripts/deployBalanceCredentialIssuer.ts) and this [demo](https://github.com/0xPolygonID/onchain-nonmerklized-issuer-demo).
 
-### Quick Start Installation
+### Quick Start Installation instructions
 
 **Requirements:**
 
